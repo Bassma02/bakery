@@ -43,5 +43,10 @@ app.MapControllerRoute(
     pattern: "Dashboard",
     defaults: new { controller = "Home", action = "Dashboard" });
 
+app.MapControllerRoute(
+    name: "catalog",
+    pattern: "{controller=Catalog}/{action=Index}/{id?}");
+
+
 app.UseEndpoints(endpoints => endpoints.MapRazorPages());
 app.Run();

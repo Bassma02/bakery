@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bassma")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b14121f2f076eb48bee18c7e3aed0a285e4ba274")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24f975a4d3f576bd5b91ea5f5eec0c4c019383b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bassma")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bassma")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

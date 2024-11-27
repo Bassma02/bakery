@@ -9,7 +9,7 @@
 @{
     ViewData["Title"] = "Sign Up";
 }
-
+<link rel="stylesheet" href="~/css/styles.css">
 <!-- Navbar Section (Include the same navbar) -->
 <header>
     <nav class="navbar">
@@ -47,7 +47,7 @@
 <!-- Sign Up Section -->
 <section class="signup-section">
     <div class="signup-image-container">
-        <img src="~/images/8.jpg" alt="Blueberry Cake" class="signup-image">
+        <img src="~/images/signup.jpg" alt="Blueberry Cake" class="signup-image">
     </div>
 
     <div class="signup-form-container">
@@ -72,7 +72,7 @@
                 <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+            <button id="registerSubmit" type="submit" class="btn-signup-submit custom-btn">Register</button>
         </form>
     </div>
 </section>
