@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Bassma.Data;
 using Bassma.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Bassma.Controllers
 {
+/*    [Authorize(Roles = "Livreur")]*/
     public class LivraisonsController : Controller
     {
         private readonly BakeryDbContext _context;

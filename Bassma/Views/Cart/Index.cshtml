@@ -1,0 +1,138 @@
+﻿@model List<Bassma.Models.Produit>
+
+<!-- Deep Purple Header -->
+<header style="background-color: rgb(66, 38, 42); padding: 20px 0;">
+    <div class="container text-center">
+        <h1 style="color: white; font-weight: bold; font-size: 2.5rem;">Mon Panier</h1>
+        <p style="color: rgb(245, 245, 245); font-size: 1.2rem;">Gérez vos articles et vérifiez votre commande facilement</p>
+    </div>
+</header>
+<style>
+    .btn.add-to-cart:hover {
+        background-color: rgb(182,187,0); /* Change color on hover */
+    }
+
+</style>
+
+<!-- Cart Section -->
+<section class="cart-section" style="font-family: 'Poppins', sans-serif; background-color: white; padding: 50px 0;">
+    <div class="container">
+        <!-- Products Section -->
+        <div class="products-section mb-5">
+            <h3 style="color: rgb(66, 38, 42); font-weight: bold; margin-bottom: 30px;">Produits Disponibles</h3>
+            <div class="row">
+                @foreach (var produit in Model)
+                {
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card" style="border: none; border-radius: 15px; background-color: white; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color: rgb(66, 38, 42); font-weight: bold; font-size: 1.2rem;">@produit.Nom</h5>
+                                <p class="card-text" style="color: rgb(66, 38, 42); margin: 10px 0;">Prix : <span style="color: rgb(66, 38, 42); font-weight: bold;">@produit.Prix MAD</span></p>
+                                <button class="btn add-to-cart" style="background-color: rgb(66, 38, 42); color: white; border-radius: 25px; padding: 10px 20px;"
+                                        data-id="@produit.Id" data-nom="@produit.Nom" data-prix="@produit.Prix">
+                                    Ajouter au Panier
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Cart Section -->
+        <div class="cart-summary">
+            <h3 style="color: rgb(66, 38, 42); font-weight: bold; margin-bottom: 30px;">Résumé du Panier</h3>
+            <div class="table-responsive">
+                <table class="table text-center" style="background-color: white; border-radius: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+                    <thead style="background-color: rgb(66, 38, 42); color: white;">
+                        <tr>
+                            <th style="padding: 15px;">Produit</th>
+                            <th style="padding: 15px;">Quantité</th>
+                            <th style="padding: 15px;">Prix Total (MAD)</th>
+                            <th style="padding: 15px;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Items will appear dynamically -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-end mt-4">
+                <h4 style="color: rgb(66, 38, 42); font-weight: bold;">Total : <span id="cart-total">0</span> MAD</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript -->
+<script>
+    let cart = [];
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotalElement = document.getElementById('cart-total');
+
+    // Add to Cart
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', () => {
+            const id = button.getAttribute('data-id');
+            const nom = button.getAttribute('data-nom');
+            const prix = parseFloat(button.getAttribute('data-prix'));
+
+            const existingItem = cart.find(item => item.id == id);
+            if (existingItem) {
+                existingItem.quantite += 1;
+                existingItem.total += prix;
+            } else {
+                cart.push({ id, nom, prix, quantite: 1, total: prix });
+            }
+
+            updateCartUI();
+        });
+    });
+
+    // Update Cart UI
+    function updateCartUI() {
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+
+        cart.forEach(item => {
+            total += item.total;
+            const row = `
+                        <tr>
+                            <td style="padding: 15px;">${item.nom}</td>
+                            <td style="padding: 15px;">${item.quantite}</td>
+                            <td style="padding: 15px;">${item.total.toFixed(2)}</td>
+                            <td style="padding: 15px;">
+                                <button class="btn btn-sm btn-outline-success" onclick="increaseQuantity('${item.id}')">+</button>
+                                <button class="btn btn-sm btn-outline-danger" onclick="decreaseQuantity('${item.id}')">-</button>
+                            </td>
+                        </tr>
+                    `;
+            cartItemsContainer.innerHTML += row;
+        });
+
+        cartTotalElement.textContent = total.toFixed(2);
+    }
+
+    // Increase Quantity
+    function increaseQuantity(id) {
+        const item = cart.find(item => item.id == id);
+        if (item) {
+            item.quantite += 1;
+            item.total += item.prix;
+            updateCartUI();
+        }
+    }
+
+    // Decrease Quantity
+    function decreaseQuantity(id) {
+        const item = cart.find(item => item.id == id);
+        if (item) {
+            item.quantite -= 1;
+            item.total -= item.prix;
+            if (item.quantite <= 0) {
+                cart = cart.filter(cartItem => cartItem.id != id);
+            }
+            updateCartUI();
+        }
+    }
+</script>

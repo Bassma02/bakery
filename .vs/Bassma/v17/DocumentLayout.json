@@ -1,30 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\",
+  "WorkspaceRootPath": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery\\bassma\\views\\catalog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\views\\catalog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery\\bassma\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\views\\livraisons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\views\\livraisons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery\\bassma\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\controllers\\livraisonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\controllers\\livraisonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\data\\bakerydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\data\\bakerydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\controllers\\rolemanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\controllers\\rolemanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery\\bassma\\models\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\models\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery\\bassma\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery\\bassma\\models\\paiement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\models\\paiement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\migrations\\20241202203420_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\migrations\\20241202203420_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|c:\\users\\aymen\\onedrive\\desktop\\bakery123\\bakery\\bassma\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A9A37F-3613-45DF-80E1-029D5B8895DF}|Bassma\\Bassma.csproj|solutionrelative:bassma\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,76 +74,177 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T21:34:21.794Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Bassma\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Bassma\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T21:33:53.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "styles.css",
-              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\wwwroot\\css\\styles.css",
-              "RelativeDocumentMoniker": "Bassma\\wwwroot\\css\\styles.css",
-              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\wwwroot\\css\\styles.css",
-              "RelativeToolTip": "Bassma\\wwwroot\\css\\styles.css",
-              "ViewState": "AQIAAKsEAAAAAAAAAAAmwNUEAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-26T21:15:14.475Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Paiement.cs",
-              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Models\\Paiement.cs",
-              "RelativeDocumentMoniker": "Bassma\\Models\\Paiement.cs",
-              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Models\\Paiement.cs",
-              "RelativeToolTip": "Bassma\\Models\\Paiement.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "LivraisonsController.cs",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Controllers\\LivraisonsController.cs",
+              "RelativeDocumentMoniker": "Bassma\\Controllers\\LivraisonsController.cs",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Controllers\\LivraisonsController.cs",
+              "RelativeToolTip": "Bassma\\Controllers\\LivraisonsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T20:53:29.374Z"
+              "WhenOpened": "2024-12-03T13:02:10.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Views\\Livraisons\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bassma\\Views\\Livraisons\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Views\\Livraisons\\Index.cshtml",
+              "RelativeToolTip": "Bassma\\Views\\Livraisons\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T13:02:02.815Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Produit.cs",
-              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Models\\Produit.cs",
-              "RelativeDocumentMoniker": "Bassma\\Models\\Produit.cs",
-              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Models\\Produit.cs",
-              "RelativeToolTip": "Bassma\\Models\\Produit.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA9AAAA",
+              "Title": "BakeryDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Data\\BakeryDbContext.cs",
+              "RelativeDocumentMoniker": "Bassma\\Data\\BakeryDbContext.cs",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Data\\BakeryDbContext.cs",
+              "RelativeToolTip": "Bassma\\Data\\BakeryDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T20:50:16.962Z"
+              "WhenOpened": "2024-12-03T10:50:12.223Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Views\\Catalog\\Index.cshtml",
-              "RelativeDocumentMoniker": "Bassma\\Views\\Catalog\\Index.cshtml",
-              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Views\\Catalog\\Index.cshtml",
-              "RelativeToolTip": "Bassma\\Views\\Catalog\\Index.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACYAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T19:13:22.056Z",
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAawHEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:47:39.482Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoleManagementController.cs",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Controllers\\RoleManagementController.cs",
+              "RelativeDocumentMoniker": "Bassma\\Controllers\\RoleManagementController.cs",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Controllers\\RoleManagementController.cs",
+              "RelativeToolTip": "Bassma\\Controllers\\RoleManagementController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwDAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:48:11.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Bassma\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Bassma\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T10:50:26.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Bassma\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Bassma\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:50:29.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Program.cs",
+              "RelativeDocumentMoniker": "Bassma\\Program.cs",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Program.cs",
+              "RelativeToolTip": "Bassma\\Program.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAAEsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:51:12.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bassma\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Bassma\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T10:55:50.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bassma\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Bassma\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAADwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T10:53:26.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Bassma\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Bassma\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:55:57.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20241202203420_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Migrations\\20241202203420_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Bassma\\Migrations\\20241202203420_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Migrations\\20241202203420_InitialCreate.cs",
+              "RelativeToolTip": "Bassma\\Migrations\\20241202203420_InitialCreate.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T20:42:16.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Bassma\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Models\\User.cs",
+              "RelativeToolTip": "Bassma\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T19:40:58.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Bassma\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T19:26:16.836Z"
             }
           ]
         }

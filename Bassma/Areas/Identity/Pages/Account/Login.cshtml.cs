@@ -14,18 +14,22 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Bassma.Models;
 
 namespace Bassma.Areas.Identity.Pages.Account
 {
     public class LoginModel : PageModel
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly SignInManager<User> _signInManager; // Use your custom User model
         private readonly ILogger<LoginModel> _logger;
+        private readonly UserManager<User> _userManager; // Ajout de UserManager
 
-        public LoginModel(SignInManager<IdentityUser> signInManager, ILogger<LoginModel> logger)
+
+        public LoginModel(SignInManager<User> signInManager, ILogger<LoginModel> logger, UserManager<User> userManager)
         {
             _signInManager = signInManager;
             _logger = logger;
+            _userManager = userManager;
         }
 
         /// <summary>
@@ -115,7 +119,14 @@ namespace Bassma.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                    var user = await _userManager.GetUserAsync(User); // Récupère l'utilisateur authentifié
+                    return user.Role switch
+                    {
+                        "Admin" => Redirect("/dashboard"),// Redirect to Admin Dashboard
+                        "Livreur" => Redirect("/Livraisons"),// Redirect to Livreur page
+                        "User" => Redirect("/home"),// Redirect to User Home
+                        _ => Redirect("/home"),// Handle null or unexpected roles by redirecting to the Home page
+                    };
                 }
                 if (result.RequiresTwoFactor)
                 {

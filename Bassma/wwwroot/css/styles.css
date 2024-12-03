@@ -2,7 +2,7 @@
 html {
     scroll-behavior: smooth;
 }
- 
+
 
 * {
     margin: 0;
@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: white;
     position: fixed;
     width: 100%;
     top: 0;
@@ -63,19 +63,16 @@ body {
 .nav-right {
     display: flex;
     gap: 60px;
-
 }
 
 .nav-left {
     margin-right: auto;
     padding-left: 180px;
-
 }
 
 .nav-right {
     margin-left: auto;
     padding-right: 200px;
-    
 }
 
 /* Center Logo */
@@ -100,21 +97,36 @@ body {
 .btn-signup {
     padding: 5px 15px;
     background-color: #fff;
-    color: #333;
+    color: black;
     border: 2px solid #333;
     border-radius: 0;
     font-weight: bold;
     text-decoration: none;
 }
 
+    .btn-signup:hover {
+        color: white;
+        background-color: #42262A;
+    }
+
 .btn-login {
     padding: 5px 15px;
-    background-color: #5a3b36;
+    background-color: #42262A;
     color: #fff;
     border-radius: 0;
     font-weight: bold;
     text-decoration: none;
 }
+
+    .btn-login:hover {
+        padding: 5px 15px;
+        background-color: #fff;
+        color: black;
+        border: 2px solid #333;
+        border-radius: 0;
+        font-weight: bold;
+        text-decoration: none;
+    }
 
 /* Hero Section */
 .hero {
@@ -133,7 +145,7 @@ body {
         width: 100%;
         height: 100%;
         background: url('/images/21.jpg') no-repeat center center/cover;
-        filter: brightness(30%); /* Darkens the image without affecting the text */
+        filter: brightness(38%); /* Darkens the image without affecting the text */
         z-index: -1; /* Keeps the image behind the text */
     }
 
@@ -153,7 +165,7 @@ body {
     font-size: 85px; /* Decrease font size slightly */
     font-weight: bold;
     color: #ffffff; /* Keep the text pure white */
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     white-space: nowrap; /* Prevent the text from breaking into multiple lines */
 }
 
@@ -163,7 +175,7 @@ body {
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: #ffffff;
-    padding-bottom: 40px; /* Pure white text */
+    padding-bottom: 25px; /* Pure white text */
 }
 
 
@@ -177,42 +189,49 @@ body {
 }
 
     /* "OUR STORY" Button */
-    .hero-buttons .btn-contact-us {
-        padding: 8px 70px; /* Increased size */
+    .hero-buttons .btn-our-story {
+        padding: 5px 60px; /* Increased size */
         background-color: #fff;
         color: #300826;
-        border: 2px solid #333;
+        border: 2px #333;
         font-weight: bold;
         font-size: 1.2rem;
         text-decoration: none;
         border-radius: 0; /* Rectangular shape */
         cursor: pointer;
         transition: all 0.3s;
-        
-
+        box-shadow: none;
+        text-shadow: none;
     }
 
-        .hero-buttons .btn-contact-us:hover {
-            background-color: #f0f0f0;
+        .hero-buttons .btn-our-story:hover {
+            background-color: rgb(182,187,0);
+            border: 2px solid #42262A;
         }
 
     /* "ORDER NOW" Button */
     .hero-buttons .btn-order-now {
-        padding: 8px 70px; /* Increased size */
-        background-color: #5a3b36;
+        padding: 5px 60px; /* Increased size */
+        background-color: #42262A;
         color: #fff;
-        border: 4px solid #fff;
+        border: 2px solid #fff;
         font-weight: bold;
         font-size: 1.2rem;
         text-decoration: none;
         border-radius: 0; /* Rectangular shape */
         cursor: pointer;
         transition: all 0.3s;
-        
+        text-shadow: none;
     }
 
         .hero-buttons .btn-order-now:hover {
-            background-color: #7d4e44;
+            background-color: rgb(182,187,0);
+            color: black;
+            border: 2px #333;
+            border-radius: 0;
+            font-weight: bold;
+            text-decoration: none;
+            text-shadow: none;
         }
 
 
@@ -232,65 +251,99 @@ body {
 .products {
     text-align: center;
     padding: 40px 20px;
-    background-color: #f8f4f4;
+    background-color: #fff;
 }
 
 .products-title {
-    font-size: 2.5rem;
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+    padding-top: 60px;
+}
+
+.products-subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100; /* Lightest valid weight */
+    font-size: 20px;
     color: black;
     margin-bottom: 10px;
 }
 
-.products-subtitle {
-    font-size: 1rem;
-    color: #5a3b36;
-    margin-bottom: 5px;
-}
-
 .products-description {
-    font-size: 0.9rem;
-    color: #5a3b36;
-    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100; /* Lightest valid weight */
+    font-size: 20px;
+    color: black;
+    margin-bottom: 60px;
 }
 
 /* Category Buttons */
 .category-buttons {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 100px; /* Increase spacing below */
 }
 
 .category-btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    background-color: #c9998d;
+    padding: 15px 30px; /* Increased button size */
+    font-size: 1.2rem; /* Larger font */
+    background-color: #BE8880;
     color: #fff;
-    border: none;
-    border-radius: 20px;
+    border: 1px solid #BE8880; /* Maintain border for consistency */
+    border-radius: 0;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: none;
+    font-weight: bold;
 }
 
+    .category-btn:first-child {
+        border-top-left-radius: 25px; /* Adjust rounded corners for larger size */
+        border-bottom-left-radius: 25px;
+    }
+
+    .category-btn:last-child {
+        border-top-right-radius: 25px; /* Adjust rounded corners for larger size */
+        border-bottom-right-radius: 25px;
+    }
+
     .category-btn.active {
-        background-color: #5a3b36;
+        background-color: #BE8880;
         color: #fff;
     }
 
     .category-btn:hover {
-        background-color: #5a3b36;
+        background-color: rgba(190, 136, 128, 0.7);
+        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6);
+        color: #fff;
+        transform: scale(1.1); /* Slightly larger zoom effect */
     }
 
+.category-buttons .category-btn + .category-btn {
+    margin-left: -1px;
+}
+
+.category-btn:focus {
+    outline: none;
+}
+
+
+
+
 .products-image {
-    width: 100vw;
-    height: 350px;
+    position: relative; /* Ensure proper placement */
+    width: 100vw; /* Ensure it covers the entire viewport width */
+    height: 297px; /* Keep the desired height */
     background-image: url('/images/32h.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     filter: brightness(40%);
-    margin-left: -2%;
+    margin: 0; /* Remove any default margin */
+    margin-bottom: 150px;
 }
+
 
 
 
@@ -309,24 +362,43 @@ body {
 }
 
 /* Image Container */
+
+
+/* Image Container */
 .journey-image-container {
-    flex: 0 0 35%; /* Make the image container smaller */
     position: relative;
-    background-color: #f8d7da; /* Pink background */
-    padding: 15px;
-    border-radius: 10px;
+    width: fit-content; /* Adjust container size to fit content */
+    margin: 20px auto; /* Center the container */
 }
 
-.image-background img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover; /* Ensures the image fits well */
+/* Background for the Image */
+.image-background {
+    position: absolute;
+    top: 20px; /* Slight vertical offset for shadow effect */
+    left: -20px; /* Shift background left */
+    width: calc(100% - 60px); /* Dynamic width slightly smaller than the image */
+    height: calc(100% - 10px); /* Dynamic height slightly smaller than the image */
+    background-color: #BE8880; /* Background color */
+    z-index: 1; /* Place it behind the image */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
+
+/* Foreground Image */
+.foreground-image {
+    position: relative;
+    z-index: 2; /* Place it above the background */
+    width: 460px; /* Set desired image size */
+    height: auto;
+    border-radius: 0; /* No rounded corners */
+    object-fit: cover; /* Maintain image proportions */
+}
+
+
+
 
 /* Text Container */
 .journey-text-container {
-    flex: 0 0 55%;
+    flex: 0 0 45%;
     text-align: left;
     padding: 20px;
     display: flex;
@@ -335,40 +407,48 @@ body {
 }
 
 .title-bar {
-    width: 80px;
-    height: 4px;
-    background-color: #5a3b36;
+    width: 160px;
+    height: 14px;
+    background-color: #42262A;
     margin-bottom: 25px;
     margin-top: 45px;
     padding: 4px;
 }
 
 .journey-text-container h2 {
-    font-size: 2.2rem;
-    color: #5a3b36;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: black;
     margin-bottom: 10px;
     padding-bottom: 20px;
 }
 
 .journey-text-container h3 {
-    font-size: 1.3rem;
-    color: #a0522d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    color: #BE8880;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
 
 .journey-text-container p {
-    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
     color: #333;
     line-height: 1.6;
     margin-bottom: 20px;
-    
+    gap: 10px;
 }
 
 /* Read More Button */
 .btn-read-more {
+    text-align: center;
+    width: 200px;
+    height: 50px;
     padding: 12px 30px;
-    background-color: #5a3b36;
+    background-color: #42262A;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -376,6 +456,16 @@ body {
     border: 2px solid #5a3b36;
     margin-top: 30px;
 }
+
+    .btn-read-more:hover {
+        background-color: rgb(182,187,0);
+        color: black;
+        border: 2px #333;
+        border-radius: 0;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: none;
+    }
 
 /* Last Image Section */
 .fleet-image {
@@ -390,10 +480,10 @@ body {
 
     .fleet-image img {
         width: 100%; /* Full width of the container */
-        max-height: 550px; /* Limit the height if necessary */
+        max-height: 700px; /* Limit the height if necessary */
         object-fit: cover; /* Ensure the image fills the space while maintaining aspect ratio */
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 130px;
+        padding-bottom: 160px;
     }
 
 
@@ -401,9 +491,9 @@ body {
 /* Contact Section */
 .contact-section {
     display: flex;
+    background-color: white;
     justify-content: center;
     padding: 40px 20px;
-    background-color: #f9f9f9;
 }
 
 .contact-container {
@@ -421,15 +511,19 @@ body {
 }
 
     .contact-left h3 {
-        font-size: 1.2rem;
-        color: #5a3b36;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        color: #000000;
         margin-bottom: 10px;
         padding-top: 15px;
     }
 
     .contact-left p {
-        font-size: 0.9rem;
-        color: #333;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        0 font-size: 20px;
+        color: #605F5F;
         margin-bottom: 20px;
     }
 
@@ -450,8 +544,10 @@ body {
 }
 
     .contact-right h3 {
-        font-size: 1.2rem;
-        color: #5a3b36;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 43px;
+        color: #42262A;
         margin-bottom: 15px;
     }
 
@@ -468,6 +564,7 @@ body {
         border: 1px solid #ccc;
         border-radius: 5px;
         font-size: 0.9rem;
+        background-color: #f9f9f9;
     }
 
     .contact-right textarea {
@@ -477,7 +574,7 @@ body {
 
     .contact-right button {
         padding: 10px 20px;
-        background-color: #5a3b36;
+        background-color: #42262A;
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -487,16 +584,23 @@ body {
     }
 
         .contact-right button:hover {
-            background-color: #7d4e44;
+            padding: 5px 15px;
+            background-color: #fff;
+            color: black;
+            border: 2px solid #333;
+            border-radius: 0;
+            font-weight: bold;
+            text-decoration: none;
+                    
         }
 
 /* Login Form Container */
 .login-form-container {
     flex: 0 0 45%; /* Form covers the remaining 45% */
     max-width: 450px;
-    margin-right: 130px; /* Adjust margin */
+    margin-right: 190px; /* Adjust margin */
+    margin-left: -30% ;
     text-align: left; /* Align content to the left */
-    
 }
 
 /* Login Section Styles */
@@ -513,25 +617,29 @@ body {
     flex: 0 0 55%; /* Image covers 55% of the screen width */
     height: 100vh; /* Full height of the viewport */
     overflow: hidden;
+    margin-left : 150px ;
 }
 
 /* Updated Image Styling */
 .login-image {
-    width: 1400px;
-    height: 90%;
-    object-fit: contain; /* Ensures the entire image is shown without cropping */
-    margin-left: -30%; /* Center the image horizontally */
+    width: 600px; /* Increase the width */
+    height: 93vh; /* Maintain the height as a percentage of viewport height */
+    margin-left : -20% ;
+    object-position: center; /* Centers the image horizontally */
+    margin: 0 auto; /* Center the image container */
     border-radius: 0px;
     padding-top: 50px;
 }
 
 
-    .login-form-container h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        color: #5a3b36; /* Use dark brown color */
-        font-weight: bold;
-    }
+
+
+.login-form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 70px;
+    color: black; /* Use dark brown color */
+    font-weight: bold;
+}
 
 .login-form-container label {
     display: block;
@@ -552,10 +660,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
-        .login-form-container input:focus {
-            outline: none;
-            border-color: #5a3b36; /* Focus color */
-        }
+    .login-form-container input:focus {
+        outline: none;
+        border-color: #5a3b36; /* Focus color */
+    }
 
 .btn-login-submit {
     width: 100%;
@@ -572,10 +680,11 @@ body {
     transition: background-color 0.3s ease;
     margin-bottom: 20px; /* Increase space below the button */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    font-weight: bold ;
 }
 
     .btn-login-submit:hover {
-        background-color: #7d4e44; /* Lighter brown on hover */
+        background-color: rgb(182,187,0); /* Lighter brown on hover */
     }
 
 .login-form-container p {
@@ -592,19 +701,18 @@ body {
 
 .login-form-container small {
     display: block;
-    margin-top: 20px;
+    margin-top: 35px;
     font-size: 0.8rem;
     color: #666;
 }
 
 
-
-/* Sign Up Section Styles (Same as Login Section) */
+/* Adjusting Navbar Margin */
 .signup-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 120px;
+    padding-top: 120px; /* Adjust for navbar */
     height: 100vh;
 }
 
@@ -613,34 +721,39 @@ body {
     flex: 0 0 55%; /* Image covers 55% of the screen width */
     height: 100vh; /* Full height of the viewport */
     overflow: hidden;
+    margin-left: 150px;
 }
 
 /* Image Styling */
 .signup-image {
-    width: 120%;
-    height: 100%;
-    object-fit: contain; /* Ensures the image covers the entire container */
-    object-position: center; /* Centers the image */
-    border-radius: 0;
-    padding-top: 40px;
+    width: 600px; /* Increase the width */
+    height: 93vh; /* Maintain the height as a percentage of viewport height */
+    margin-left: -20%;
+    object-position: center; /* Centers the image horizontally */
+    margin: 0 auto; /* Center the image container */
+    border-radius: 0px;
+    padding-top: 50px;
 }
-
 
 /* Form Container */
 .signup-form-container {
     flex: 0 0 45%; /* Form covers the remaining 45% */
     max-width: 450px;
-    padding-right: 100px;
-    margin-right: 150px;
+    margin-right: 190px; /* Adjust margin */
+    margin-left: -30%;
+    text-align: left; /* Align content to the left */
+    margin-top: 47px;
 }
 
+    /* Form Heading */
     .signup-form-container h2 {
-        font-size: 2.1rem;
-        margin-bottom: 30px;
-        color: black;
-        padding-bottom: 15px;
+        font-size: 2rem;
+        margin-bottom: 65px;
+        color: black; /* Use dark brown color */
+        font-weight: bold;
     }
 
+    /* Form Labels */
     .signup-form-container label {
         display: block;
         margin-bottom: 10px; /* Increase space between labels and inputs */
@@ -648,6 +761,7 @@ body {
         font-size: 1.1rem; /* Increase font size */
     }
 
+    /* Form Inputs */
     .signup-form-container input {
         width: 100%;
         padding: 10px;
@@ -660,10 +774,39 @@ body {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
     }
 
+        .signup-form-container input:focus {
+            outline: none;
+            border-color: #5a3b36; /* Focus color */
+        }
+
+/* Terms and Conditions */
+.form-terms {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+    .form-terms label {
+        margin-left: 5px;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+/* Custom checkbox size */
+input[type="checkbox"] {
+    width: 15px; /* Adjust the width */
+    height: 15px; /* Adjust the height */
+    margin-right: 10px; /* Add space between the checkbox and label */
+    cursor: pointer; /* Add a pointer cursor for better user experience */
+}
+
+
+/* Button */
 .btn-signup-submit {
     width: 100%;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 7px;
     padding-left: 50px;
     padding-right: 50px;
     background-color: #42262A;
@@ -675,25 +818,25 @@ body {
     transition: background-color 0.3s ease;
     margin-bottom: 20px; /* Increase space below the button */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    font-weight: bold ;
 }
 
-/* Additional Form Text Styles */
+    .btn-signup-submit:hover {
+        background-color: rgb(182,187,0); /* Lighter brown on hover */
+    }
+
+/* Already have an account */
 .signup-form-container p {
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 0.9rem;
+    color: #555;
 }
 
-.signup-form-container a {
-    color: #5a3b36;
-    text-decoration: none;
-}
-
-.signup-form-container small {
-    display: block;
-    margin-top: 20px;
-    font-size: 0.8rem;
-    color: #666;
-}
+    .signup-form-container p a {
+        color: #5a3b36;
+        text-decoration: none;
+        font-weight: bold ;
+    }
 
 
 /* Catalog Hero Section */
@@ -816,8 +959,8 @@ body {
     z-index: 1;
 }
 
-    /* Overlay Text for Left Large Card */
-.left-large-card  .card-overlay h3 {
+/* Overlay Text for Left Large Card */
+.left-large-card .card-overlay h3 {
     font-family: 'Original Surfer'; /* Use Original Surfer font */
     font-size: 1.5rem;
     font-weight: bold;
@@ -1233,7 +1376,5 @@ body {
     border-radius: 5px;
     cursor: pointer;
     text-transform: uppercase;
-    align-self: flex-start;
+    align-self:  flex-start;
 }
-
-

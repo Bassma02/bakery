@@ -9,6 +9,57 @@
     ViewData["Title"] = "Login";
 }
 <link rel="stylesheet" href="~/css/styles.css">
+<style>
+
+    .a{
+        margin-bottom : 0 ;
+    }
+    .form-label {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+        color: #4a4a4a;
+    }
+
+    .form-control {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #592f2b;
+            box-shadow: 0 0 5px rgba(89, 47, 43, 0.5);
+        }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px 20px; /* Added bottom padding */
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        padding-bottom : 0px ;
+       
+    }
+
+    .login-section {
+        margin-top: 0px; /* Pushes the content below the navbar */
+        padding-bottom: 40px; /* Adds padding to the bottom of the section */
+    }
+
+   
+
+
+</style>
 
 
 <!-- Navbar Section (Reusing from Home Page) -->
@@ -43,54 +94,46 @@
         <img src="~/images/login.jpg" alt="Donuts" class="login-image">
     </div>
     <div class="login-form-container">
-        <h2>Se Connecter</h2>
+        <h2>SE CONNECTER</h2>
         <form id="account" method="post">
-            <h3>Use a local account to log in.</h3>
-            <hr />
+
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                <label asp-for="Input.Email" class="form-label">Email</label>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="qhfhuqhf@example.com" />
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.Password" class="form-label">Password</label>
+            <div class="mb-3">
+                <label for="password" class="form-label">Mot de passe</label>
+                <input id="password" asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Entrer votre mot de passe" />
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
+
             @* <div class="checkbox mb-3">
-                <label asp-for="Input.RememberMe" class="form-label">
-                    <input class="form-check-input" asp-for="Input.RememberMe" />
-                    @Html.DisplayNameFor(m => m.Input.RememberMe)
-                </label>
+            <label asp-for="Input.RememberMe" class="form-label">
+            <input class="form-check-input" asp-for="Input.RememberMe" />
+            @Html.DisplayNameFor(m => m.Input.RememberMe)
+            </label>
             </div> *@
             <div>
-                <button id="login-submit" type="submit" class="btn-login-submit custom-btn">Log in</button>
+                <button id="login-submit" type="submit" class="btn-login-submit custom-btn"> SE CONNECTER </button>
             </div>
-            <div>
-                <p>
-                    <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                </p>
-                <p>
-                    <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                </p>
-                <p>
-                    <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
-                </p>
-            </div>
+            
         </form>
 
         @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
         {
             <div class="text-red-500 mt-4">@ViewBag.ErrorMessage</div>
         }
-        <p>Pas encore de compte ? <a href="/Account/Signup">S'inscrire</a></p>
-        <p><a href="#">Mot de passe oublié ?</a></p>
+        <p class="a">Pas encore de compte ? <a href="/Identity/Account/Register">S'inscrire</a></p>
+        <p>
+            <a id="forgot-password" asp-page="./ForgotPassword">Mot de passe oublié ?</a>
+        </p>
         <small>Si besoin d’aide, merci de vous référer au Centre d’Assistance ou de contacter notre service client.</small>
     </div>
 </section>
 
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial"   />
 }
