@@ -131,12 +131,22 @@
         <!-- Contact Form -->
         <div class="contact-right">
             <h3>CONTACT</h3>
-            <form>
-                <input type="text" placeholder="Entrez votre nom" required>
-                <input type="email" placeholder="Entrez une adresse mail valide" required>
-                <textarea placeholder="Entrez votre message" required></textarea>
-                <button type="submit">ENVOYER</button>
+            <form asp-controller="Contact" asp-action="Submit" method="post">
+                <input type="text" name="Name" placeholder="Enter your name" required>
+                <input type="email" name="Email" placeholder="Enter a valid email address" required>
+                <textarea name="Message" placeholder="Enter your message" required></textarea>
+                <button type="submit">SEND</button>
             </form>
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <p class="success-message">@TempData["SuccessMessage"]</p>
+            }
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <p class="error-message">@TempData["ErrorMessage"]</p>
+            }
         </div>
+
     </div>
 </section>

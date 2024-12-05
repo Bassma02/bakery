@@ -1378,3 +1378,16 @@ input[type="checkbox"] {
     text-transform: uppercase;
     align-self:  flex-start;
 }
+
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

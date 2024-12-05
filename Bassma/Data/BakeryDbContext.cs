@@ -18,6 +18,8 @@ namespace Bassma.Data
         public DbSet<Paiement> Paiments { get; set; }
         public DbSet<Livraison> Livraisons { get; set; }
         public DbSet<Promotion> Promotions { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
