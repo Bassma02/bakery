@@ -2,12 +2,21 @@
 using System.Collections.Generic;
 using Bassma.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
+using Bassma.Data;
 
 namespace Bassma.Controllers
 {
     [Authorize] // Allows any authenticated user temporarily
     public class CartController : Controller
     {
+        private readonly BakeryDbContext _context; // Injected DbContext
+
+        // Constructor
+        public CartController(BakeryDbContext context)
+        {
+            _context = context;
+        }
         // Hardcoded products (to simplify without a database)
         private readonly List<Produit> Products = new List<Produit>
         {
@@ -25,12 +34,19 @@ namespace Bassma.Controllers
             new Produit { Id = 12, Nom = "Cinnamon Swirl Roll", Prix = 14 },
             new Produit { Id = 13, Nom = "Strawberry Swiss Roll", Prix = 18 },
             new Produit { Id = 14, Nom = "Pistachio Dome Delight", Prix = 25 },
-            new Produit { Id = 15, Nom = "Tiramisu Muffin", Prix = 22 }
+            new Produit { Id = 15, Nom = "Chocolate Dipped Croissant", Prix = 15 },
+            new Produit { Id = 16, Nom = "Tiramisu Muffin", Prix = 22 }
         };
 
         public IActionResult Index()
         {
-            return View(Products); // Pass products to the view
+            var produits = _context.Produits.ToList();
+            foreach (var produit in produits)
+            {
+                Console.WriteLine(produit.ImagePath); // Log ImagePath values
+            }
+            return View(produits);
         }
+
     }
 }

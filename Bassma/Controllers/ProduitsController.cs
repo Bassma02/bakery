@@ -153,5 +153,41 @@ namespace Bassma.Controllers
         {
             return _context.Produits.Any(e => e.Id == id);
         }
+
+        // GET: Product/Add
+        [HttpGet]
+        public IActionResult Add()
+        {
+            return View();
+        }
+
+        // POST: Product/Add
+        [HttpPost]
+        public IActionResult Add(Produit model, IFormFile imageFile)
+        {
+            if (imageFile != null)
+            {
+                // Save the image
+                var folderPath = Path.Combine("wwwroot/images/products");
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+
+                var filePath = Path.Combine(folderPath, imageFile.FileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    imageFile.CopyTo(stream);
+                }
+
+                // Save relative path to the database
+                model.ImagePath = $"/images/products/{imageFile.FileName}";
+            }
+
+            _context.Produits.Add(model);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
     }
 }

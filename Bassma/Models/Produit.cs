@@ -7,7 +7,8 @@
 		public string Nom { get; set; }
 		public string Description { get; set; }
 		public decimal Prix { get; set; }
-		public int? UserId { get; set; } // Clé étrangère vers User
+        public string ImagePath { get; set; } // Path to the product image
+        public int? UserId { get; set; } // Clé étrangère vers User
 
 		// Navigation properties
 		public User User { get; set; }

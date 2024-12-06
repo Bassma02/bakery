@@ -179,6 +179,10 @@ namespace Bassma.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nom")
                         .IsRequired()
                         .HasMaxLength(100)

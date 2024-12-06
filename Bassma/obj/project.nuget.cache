@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bufNuR5VdHWCl8QtHAjz2uw88avDO23RIgk00RLSfKeS9vEiExSdsMhRS+ZJQEq5c7sFeHZdcLQoFAfoUs0aaw==",
+  "dgSpecHash": "FpKTFCn53L7tOcsx7DFjXn+EJ45iOMofv2hnKUncULpFnzfgXElElWYlx5+pDye0n6Wg/yn+xKBKi99FtJJXsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery123\\bakery\\Bassma\\Bassma.csproj",
+  "projectFilePath": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Bassma.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aymen\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\aymen\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
