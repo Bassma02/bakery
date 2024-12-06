@@ -8324,24 +8324,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aymen\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Bassma.csproj",
       "projectName": "Bassma",
       "projectPath": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\Bassma.csproj",
       "packagesPath": "C:\\Users\\aymen\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aymen\\OneDrive\\Desktop\\bakery\\Bassma\\obj\\",
+=======
+      "projectUniqueName": "D:\\bakery\\Bassma\\Bassma.csproj",
+      "projectName": "Bassma",
+      "projectPath": "D:\\bakery\\Bassma\\Bassma.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "D:\\bakery\\Bassma\\obj\\",
+>>>>>>> 043145a607b5791bb9f9b6eb807252aed5543251
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\aymen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8423,7 +8426,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

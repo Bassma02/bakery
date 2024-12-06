@@ -1,5 +1,9 @@
 ﻿@model List<Bassma.Models.Produit>
 
+<<<<<<< HEAD
+=======
+<!-- Header Section -->
+>>>>>>> 043145a607b5791bb9f9b6eb807252aed5543251
 <header style="background-color: rgb(66, 38, 42); padding: 20px 0;">
     <div class="container text-center">
         <h1 style="color: white; font-weight: bold; font-size: 2.5rem;">Mon Panier</h1>
@@ -97,24 +101,29 @@
     .total-summary {
         color: rgb(66, 38, 42);
         font-weight: bold;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 043145a607b5791bb9f9b6eb807252aed5543251
     }
 </style>
 
+
 <!-- Cart Section -->
-<section class="cart-section" style="font-family: 'Poppins', sans-serif; background-color: white; padding: 50px 0;">
+<section class="cart-section">
     <div class="container">
         <!-- Products Section -->
         <div class="products-section mb-5">
-            <h3 style="color: rgb(66, 38, 42); font-weight: bold; margin-bottom: 30px;">Produits Disponibles</h3>
+            <h3>Produits Disponibles</h3>
             <div class="row">
                 @foreach (var produit in Model)
                 {
                     
 
                     <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card" style="border: none; border-radius: 15px; background-color: white; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);">
+                        <div class="card">
                             <div class="card-body text-center">
+<<<<<<< HEAD
                                 <!-- Image -->
                                 <img src="@(!string.IsNullOrEmpty(produit.ImagePath) ? produit.ImagePath : "/images/default.jpg")"
                                      alt="@produit.Nom"
@@ -133,6 +142,11 @@
                                 <!-- Add to Cart Button -->
                                 <button class="btn add-to-cart" style="background-color: rgb(66, 38, 42); color: white; border-radius: 25px; padding: 10px 20px;"
                                         data-id="@produit.Id" data-nom="@produit.Nom" data-prix="@produit.Prix" data-image="@produit.ImagePath">
+=======
+                                <h5 class="card-title">@produit.Nom</h5>
+                                <p class="card-text">Prix : <span style="font-weight: bold;">@produit.Prix MAD</span></p>
+                                <button class="btn add-to-cart" data-id="@produit.Id" data-nom="@produit.Nom" data-prix="@produit.Prix">
+>>>>>>> 043145a607b5791bb9f9b6eb807252aed5543251
                                     Ajouter au Panier
                                 </button>
                             </div>
@@ -142,17 +156,21 @@
             </div>
         </div>
 
+<<<<<<< HEAD
         <!-- Cart Summary Section -->
+=======
+        <!-- Cart Summary -->
+>>>>>>> 043145a607b5791bb9f9b6eb807252aed5543251
         <div class="cart-summary">
-            <h3 style="color: rgb(66, 38, 42); font-weight: bold; margin-bottom: 30px;">Résumé du Panier</h3>
+            <h3>Résumé du Panier</h3>
             <div class="table-responsive">
-                <table class="table text-center" style="background-color: white; border-radius: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
-                    <thead style="background-color: rgb(66, 38, 42); color: white;">
+                <table class="table text-center">
+                    <thead>
                         <tr>
-                            <th style="padding: 15px;">Produit</th>
-                            <th style="padding: 15px;">Quantité</th>
-                            <th style="padding: 15px;">Prix Total (MAD)</th>
-                            <th style="padding: 15px;">Actions</th>
+                            <th>Produit</th>
+                            <th>Quantité</th>
+                            <th>Prix Total (MAD)</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody id="cart-items">
@@ -160,7 +178,10 @@
                     </tbody>
                 </table>
             </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 043145a607b5791bb9f9b6eb807252aed5543251
             <div class="d-flex justify-content-between align-items-center mt-4">
                 <h4 class="total-summary">Total : <span id="cart-total">0</span> MAD</h4>
                 <a href="/dashboard" class="admin-dashboard-btn">Accéder au Tableau de Bord</a>
@@ -172,3 +193,65 @@
 <script src="/js/cart.js"></script>
 
 
+<<<<<<< HEAD
+=======
+            const existingItem = cart.find(item => item.id == id);
+            if (existingItem) {
+                existingItem.quantite += 1;
+                existingItem.total += prix;
+            } else {
+                cart.push({ id, nom, prix, quantite: 1, total: prix });
+            }
+
+            updateCartUI();
+        });
+    });
+
+    // Update Cart UI
+    function updateCartUI() {
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+
+        cart.forEach(item => {
+            total += item.total;
+            const row = `
+                            <tr>
+                                <td>${item.nom}</td>
+                                <td>${item.quantite}</td>
+                                <td>${item.total.toFixed(2)}</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-success" onclick="increaseQuantity('${item.id}')">+</button>
+                                    <button class="btn btn-sm btn-outline-danger" onclick="decreaseQuantity('${item.id}')">-</button>
+                                </td>
+                            </tr>
+                        `;
+            cartItemsContainer.innerHTML += row;
+        });
+
+        cartTotalElement.textContent = total.toFixed(2);
+    }
+
+    // Increase Quantity
+    function increaseQuantity(id) {
+        const item = cart.find(item => item.id == id);
+        if (item) {
+            item.quantite += 1;
+            item.total += item.prix;
+            updateCartUI();
+        }
+    }
+
+    // Decrease Quantity
+    function decreaseQuantity(id) {
+        const item = cart.find(item => item.id == id);
+        if (item) {
+            item.quantite -= 1;
+            item.total -= item.prix;
+            if (item.quantite <= 0) {
+                cart = cart.filter(cartItem => cartItem.id != id);
+            }
+            updateCartUI();
+        }
+    }
+</script>
+>>>>>>> 043145a607b5791bb9f9b6eb807252aed5543251
